@@ -115,9 +115,13 @@ form.form::after {
     background-color: #D6EEEE;
 }
 .table{
-    margin-left: 80px;   
+    margin-left: 80px; 
+    /* text-decoration: underline;   */
 }
-
+#thead th{
+    padding-left: 200px;
+    text-decoration: underline;
+}
 
 /* css footer */
 
