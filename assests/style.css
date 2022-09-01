@@ -81,3 +81,27 @@ form.form::after {
     clear: both;
     display: table;
   }
+
+ .footer{
+    position: absolute;
+    bottom: 1%;
+    background-color: orange;
+    width: 95%;
+    /* margin-left: 100px; */
+ }
+
+ .footer,
+ .theFooter{
+    display: flex;
+    margin-left: 30px;
+ }
+ #list_items_about{
+    margin-left: 500px;
+    color: #f2f2f2;
+
+ }
+ #list_items_support{
+    margin-left: 600px;
+    color: #f2f2f2;
+
+ }
