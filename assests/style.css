@@ -19,7 +19,8 @@ body{
 .navbar{
     position: absolute;
     background-color: orange;
-    margin: 20px;
+    /* margin: 20px; */
+    margin-left: 30px;
     width: 95%;
 }
 
@@ -50,7 +51,7 @@ body{
 
 .form{
     box-sizing: border-box;
-    margin-left: 300px;
+    margin-left: 440px;
   }
 
 form.form input[type=text] {
@@ -127,7 +128,7 @@ form.form::after {
 
  .footer{
     position: absolute;
-    bottom: 1%;
+    bottom: 0%;
     background-color: orange;
     width: 95%;
     /* margin-left: 100px; */
