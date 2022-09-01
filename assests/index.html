@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Track My Shelf</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
        
@@ -46,7 +51,7 @@
             <div class="addList">
                 <h2>List of Books</h2>
                 <div>
-                    <button type="button" class="addBook">Add A Book</button>
+                    <button type="submit" class="addBook" data-bs-toggle="modal" data-bs-target="#add-book">Add A Book</button>
                 </div>
             </div>
             <table class="table " id="books-list">
@@ -89,6 +94,38 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- my models -->
+   <!-- Modal -->
+<div class="modal fade" id="add-book" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="the-form">
+            <label for="name">Book Name</label>
+            <input type="text" id="name" name ="bookName"class="control-form" required>
+          </div>
+          <div class="the-form">
+            <label for="description">Book Description</label>
+            <input type="text" id="description" name ="description"class="control-form" required>
+          </div>
+          <div class="the-form">
+            <label for="author">Author</label>
+            <input type="text" id="author" name ="author"class="control-form" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add Book</button>
+        </div>
+      </form>
+    </div>
+  </div>
     
 </body>
 </html>
