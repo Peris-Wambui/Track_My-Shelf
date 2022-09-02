@@ -23,7 +23,7 @@ function onAddBook( evt ){
         method:"POST",
         body:JSON.stringify(book),
         headers:{
-            'content=Type':'application/json',
+            'content-Type':'application/json',
         }
     })
     .then(response=>{
