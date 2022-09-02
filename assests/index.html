@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>Track My Shelf</title>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+   
 </head>
 <body>
        
@@ -51,7 +52,7 @@
             <div class="addList">
                 <h2>List of Books</h2>
                 <div>
-                    <button type="submit" class="addBook" data-bs-toggle="modal" data-bs-target="#add-book">Add A Book</button>
+                    <button type="submit" class="btn add-book" data-bs-toggle="modal" data-bs-target="#add-book-form">Add A Book</button>
                 </div>
             </div>
             <table class="table " id="books-list">
@@ -98,7 +99,7 @@
 
     <!-- my models -->
    <!-- Modal -->
-<div class="modal fade" id="add-book" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="add-book-form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <form class="modal-content">
         <div class="modal-header">
