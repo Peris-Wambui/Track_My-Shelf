@@ -27,7 +27,9 @@ function onAddBook( evt ){
         }
     })
     .then(response=>{
-        console.log(response);
+        return response.json();
+        // console.log(response);  
+             
     });
     
     
