@@ -52,8 +52,16 @@ function getBooks(){
 
 }
 
-function updateBooks(){
-    
+function updateBooksTable(books){
+    document.querySelector('table#books-list tbody').innerHTML= books.map(books=>{
+        return`<tr>
+            <td>${books.bookName}</td>
+            <td>${books.bookDescription}</td>
+            <td>${books.author}</td>
+        </tr>`;
+    });
+
+
 }
 
 
