@@ -60,7 +60,7 @@ function updateBooksTable(books){
             <td>${books.bookDescription}</td>
             <td>${books.author}</td>
         </tr>`;
-    });
+    }).join('');
 
 
 }
