@@ -91,8 +91,8 @@ form.form::after {
     bottom: 15%;
     background-color: #f1f1f1da;
     height: 70%;
-    width: 70%;
-    margin-left: 250px;
+    width: 85%;
+    margin-left: 220px;
 }
 
 .addList{
@@ -116,7 +116,7 @@ form.form::after {
     background-color: #D6EEEE;
 }
 .table{
-    margin-left: 60px; 
+    margin-left: 10px; 
     /* text-decoration: underline;   */
 }
 #thead th{

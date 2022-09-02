@@ -46,7 +46,8 @@ function onAddBook( evt ){
 
 
 function getBooks(){
-    fetch(`${apiHost}/books`).then(response=>response.json()).then(books=>{
+    fetch(`${apiHost}/books?limit=5`).then(response=>response.json()).then(books=>{
+        updateBooksTable(books);
 
     });
 
@@ -67,6 +68,7 @@ function updateBooksTable(books){
 
 document.addEventListener("DOMContentLoaded",()=>{
     console.log();
+    getBooks();
 
     const addBookForm =document.getElementById('add-book-form');
     addBookForm.addEventListener('submit', onAddBook);
