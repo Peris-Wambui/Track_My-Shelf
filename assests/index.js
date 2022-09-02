@@ -36,6 +36,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     const addBookForm =document.getElementById('add-book-form');
     addBookForm.addEventListener('submit', addBook);
-    
+    addBook()
 
 });
