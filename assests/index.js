@@ -1,6 +1,6 @@
 const apiHost = " http://localhost:3000";
 
-function addBook(evt) {
+function onAddBook(evt) {
     evt.preventDefault();
 
 
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     console.log();
 
     const addBookForm =document.getElementById('add-book-form');
-    addBookForm.addEventListener('submit', addBook);
-    addBook()
+    addBookForm.addEventListener('submit', onAddBook);
+    
 
 });
