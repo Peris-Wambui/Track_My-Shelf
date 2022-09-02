@@ -42,6 +42,21 @@ function onAddBook( evt ){
     
 }
 
+
+
+
+function getBooks(){
+    fetch(`${apiHost}/books`).then(response=>response.json()).then(books=>{
+
+    });
+
+}
+
+function updateBooks(){
+    
+}
+
+
 document.addEventListener("DOMContentLoaded",()=>{
     console.log();
 
