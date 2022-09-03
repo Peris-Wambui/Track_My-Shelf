@@ -25,12 +25,33 @@ function onAddBook( evt ){
         headers:{
             'content-Type':'application/json',
         }
+    }).then(response=>{
+        // return response.json();
+        console.log(response)
+        if (response.status == 500) {
+            alert("There something wrong from our side, please wait");
+            return;
+        }
+        if (response.status == 200 || response.status == 201) {
+            alert("The book was added successully");
+        }
+
+        throw new Error(response.statusText);
+
     })
-    .then(response=>{
-        return response.json();
+        .catch(error => {
+            alert(error.message);
+        })
+        .finally(() => {
+            submitBtn.disable = false;
+            submitBtn.innerHTML = "Add book";
+
+            form.reset();
+            getBooks();
+        });
         // console.log(response);  
              
-    });
+    }
     // .finally(()=>{
     //     submitbutton.disable = false;
     //     submitbutton.innerHTML="Add Book";
@@ -40,7 +61,7 @@ function onAddBook( evt ){
     // });
     
     
-}
+
 
 
 
