@@ -73,7 +73,7 @@ form.form::after {
 /* css body */
 .container{
     background-color: #f1f1f1da;
-    height: 70%;
+    height: 74%;
     width: 85%;
     margin-left: 120px;
 }
@@ -109,7 +109,7 @@ form.form::after {
 
  .footer{
     background-color: orange;
-    width: 95%;
+    width: 100%;
  }
 
  .footer,
@@ -123,7 +123,7 @@ form.form::after {
 
  }
  #list_items_support{
-    margin-left: 600px;
+    margin-left: 550px;
     color: #f2f2f2;
 
  }
